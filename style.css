@@ -209,10 +209,36 @@ body {
     text-align: justify ;
 }
 
+/*Responsif about us*/
+@media (max-width: 768px) {
+    .about-section .info {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .about-section .content h2 {
+      font-size: 2.25rem; 
+      margin: 20px 0 0 0;
+    }
+  
+    .text {
+      font-size: 1.5rem; 
+    }
+  
+    .about-img {
+      max-width: 90%; 
+      margin: 0 0 0 20px; 
+    }
+  
+    .text h3 {
+      margin-bottom: 10px; 
+    }
+  }
+
 
 .container {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 20px;
 }
 
 h2 {
