@@ -1,142 +1,69 @@
-<!DOCTYPE html> <!-- INI BAGIAN TESTIMONI APA KATA MEREKA TENTANG KITAAAA -->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id"> <!-- Bahasa halaman diatur ke Bhs Indo -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eclipta Catering</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #1a1a1a;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        h2 {
-            color: #fff;
-            margin-bottom: 40px;
-            font-size: 32px;
-            font-weight: 600;
-        }
-
-        h2 span {
-            color: #fbbd19;
-        }
-
-        .testimonials {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .testimonial {
-            background-color: #2a2a2a;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
-            text-align: center;
-        }
-
-        .testimonial-img {
-            border-radius: 50%;
-            width: 120px;  /* Ukuran gambar diperbesar */
-            height: 120px; /* Ukuran gambar diperbesar */
-            margin-bottom: 15px;
-            object-fit: cover; /* Menjaga rasio gambar */
-        }
-
-        .testimonial h3 {
-            color: #fff;
-            margin-bottom: 10px;
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .testimonial p {
-            color: #aaa;
-            font-size: 16px;
-        }
-
-        .contact {
-            margin-top: 50px;
-        }
-
-        .contact h3 {
-            color: #fff;
-            margin-bottom: 10px;
-            font-size: 24px;
-            font-weight: 600;
-        }
-
-        .contact span {
-            color: #fbbd19;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        form input, form textarea {
-            padding: 10px;
-            margin: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            width: 100%;
-            max-width: 400px;
-        }
-
-        form input[type="submit"] {
-            background-color: #fbbd19;
-            color: #000;
-            cursor: pointer;
-        }
-    </style>
+    <meta charset="UTF-8"> <!-- Set karakter ke UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsif untuk perangkat mobile -->
+    <title>Eclipta Catering</title> <!-- Judul halamannya -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Link font Poppins -->
+    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Link ke Font Awesome untuk ikon -->
 </head>
 <body>
 
-<div class="container" id="home">
-    <h2>How people think <span>about us?</span></h2>
+    <!-- Ini untuk halaman testimoniiiiiii -->
+    <div class="container" id="home">
+        <h2>How people think <span>about us?</span></h2> <!-- Judul bagian testimoni -->
+        
+        <div class="testimonials"> 
+            <div class="testimonial" id="testimonial-1"> <!-- Testi pertama -->
+                <img src="img/bang toyib.jpg" alt="Bang Toyib" class="testimonial-img"> <!-- Muka bang toyib -->
+                <h3>Bang Toyib</h3> <!-- Nama dia -->
+                <p>Enak banget sih wajib coba !!! buat yang belum pernah coba parah sih awokawokawokwokwk</p> <!-- Isi ulasan bang toyib -->
+            </div>
+
+            <div class="testimonial" id="testimonial-2"> <!-- Testi kedua -->
+                <img src="img/om irawan.jpg" alt="Om Irawan" class="testimonial-img"> <!-- Muka om irawan -->
+                <h3>Om Irawan</h3> <!-- Nama dia -->
+                <p>Rekomen banget buat pesen catering disini, dijamin 100% halal, sehat dan bergizi</p> <!-- Isi ulasan om irawan -->
+            </div>
+
+            <div class="testimonial" id="testimonial-3"> <!-- Testi ketiga -->
+                <img src="img/pak budi.jpg" alt="Pak Budi" class="testimonial-img"> <!-- Muka pak budi -->
+                <h3>Pak Budi</h3> <!-- Nama dia -->
+                <p>Ga pernah nyesel pesen disini, udah langganan tiap ada acara.. Ownernya baik hati, ramah, dan tidak sombong</p> <!-- Isi ulasan pak budi -->
+            </div>
+        </div>
+
+        <!-- Ini buat bagian kontakkkkk -->
+        <div class="contact" id="contact"> <!-- Kontainer buat formu kontak -->
+            <h3>Contact <span>Us</span></h3> <!-- Judul bagian kontak -->
+            <p>+6285648170852</p> <!-- Nomor wa nya aca -->
+
+            <form action="#" method="post"> <!-- Form buat ngirim pesan, ini nanti menuju ke wa yg di atas -->
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br> <!-- Buat nama -->
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br> <!-- Buat email -->
+                <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea><br> <!-- Buat pesan -->
+                <input type="submit" value="Send Message"> <!-- Tombol kirim -->
+            </form>
+        </div>
+    </div>
+
+    <div class="map-container"> <!-- Kontainer untuk peta -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151198.217402622!2d112.61127787225617!3d-7.257574870896103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1aa4b3a4eb69%3A0x91f6c5474c6d5b91!2sSurabaya%2C%20East%20Java%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1695716764314!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <!-- Peta Surabaya -->
+    </div>    
     
-    <div class="testimonials">
-        <div class="testimonial" id="testimonial-1">
-            <img src="img/bang toyib.jpg" alt="Bang Toyib" class="testimonial-img">
-            <h3>Bang Toyib</h3>
-            <p>Enak banget sih wajib coba buat yang belum pernah coba</p>
-        </div>
-
-        <div class="testimonial" id="testimonial-2">
-            <img src="img/om irawan.jpg" alt="Om Irawan" class="testimonial-img">
-            <h3>Om Irawan</h3>
-            <p>Rekomen banget buat pesen catering disini, dijamin 100% halal dan enak</p>
-        </div>
-
-        <div class="testimonial" id="testimonial-3">
-            <img src="img/pak budi.jpg" alt="Pak Budi" class="testimonial-img">
-            <h3>Pak Budi</h3>
-            <p>Ga pernah nyesel pesen disini, udah langganan tiap ada acara</p>
-        </div>
-    </div>
-
-    <div class="contact" id="contact">
-        <h3>Contact <span>Us</span></h3>
-        <p>+6285648170852</p>
-
-        <form action="#" method="post">
-            <input type="text" id="name" name="name" placeholder="Your Name" required><br>
-            <input type="email" id="email" name="email" placeholder="Your Email" required><br>
-            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea><br>
-            <input type="submit" value="Send Message">
-        </form>
-    </div>
-</div>
+    <!-- Bagian Footer -->
+    <footer>
+        <nav> <!-- Navigasi footer -->
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i><span>Home</span></a></li> <!-- Menu Home -->
+                <li><a href="#"><i class="fas fa-bars"></i><span>Menu</span></a></li> <!-- Menu Menu -->
+                <li><a href="#"><i class="fas fa-info-circle"></i><span>About us</span></a></li> <!-- Menu About Us -->
+                <li><a href="#"><i class="fas fa-envelope"></i><span>Contact</span></a></li> <!-- Menu Contact -->
+            </ul>
+        </nav>
+        <p>Created by <span class="black-text">Kelompok</span> <span class="black-text">P13</span> @2024</p> <!-- Keterangan pembuat.. kelompok kita -->
+    </footer>
 
 </body>
 </html>
-
