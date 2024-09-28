@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html lang="id"> <!-- Bahasa halaman diatur ke Bhs Indo -->
-<head>
-    <meta charset="UTF-8"> <!-- Set karakter ke UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsif untuk perangkat mobile -->
-    <title>Eclipta Catering</title> <!-- Judul halamannya -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Link font Poppins -->
-    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS eksternal -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Link ke Font Awesome untuk ikon -->
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-logo">Eclipta<span>catering</span></div>
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="about-us">About us</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#"><img src="icon/search.svg" alt="Search" /></a>
+        <a href="#"><img src="icon/Shopping-cart.svg" alt="Cart" /></a>
+      </div>
+      <div id="hamburger-menu">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="content">
+        <h1>Life's Too Short for <span>Bad Food</span></h1>
+        <p>
+          Eclipta catering has been trusted to handle small to large events and
+          has never disappointed consumers since 1920
+        </p>
+        <a href="#" class="cta">Buy Now!</a>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="content">
+        <h2>About <span>Us</span></h2>
+        <div class="info">
+            <img src="img/about-us.jpg" alt="Catering food" class="about-img">
+            <div class="text">
+            <h3><strong>Why you should choose us for your occasion?</strong></h3>
+            <p>Kami menawarkan layanan katering profesional dan berkualitas tinggi yang didedikasikan untuk menjadikan acara Anda lebih istimewa. Dengan beragam pilihan menu lezat dan bahan-bahan segar berkualitas, kami siap menghadirkan pengalaman kuliner yang tak terlupakan.</p>
+            <p>Kami memahami bahwa setiap acara adalah unik, itulah sebabnya kami memberikan solusi yang disesuaikan dengan kebutuhan Anda. Dari hidangan pembuka hingga hidangan utama, kami berkomitmen memberikan layanan terbaik dan cita rasa sempurna di setiap gigitan.</p>
+            </div>
+        </div>
+        </div>
+    </section>
 
     <!-- Ini untuk halaman testimoniiiiiii -->
     <div class="container" id="home">
@@ -33,9 +73,10 @@
                 <p>Ga pernah nyesel pesen disini, udah langganan tiap ada acara.. Ownernya baik hati, ramah, dan tidak sombong</p> <!-- Isi ulasan pak budi -->
             </div>
         </div>
+    </div>
 
-        <!-- Ini buat bagian kontakkkkk -->
-        <div class="contact" id="contact"> <!-- Kontainer buat formu kontak -->
+    <!-- Ini buat bagian kontakkkkk -->
+    <div class="contact" id="contact"> <!-- Kontainer buat formu kontak -->
             <h3>Contact <span>Us</span></h3> <!-- Judul bagian kontak -->
             <p>+6285648170852</p> <!-- Nomor wa nya aca -->
 
@@ -47,10 +88,10 @@
             </form>
         </div>
     </div>
-
+    
     <div class="map-container"> <!-- Kontainer untuk peta -->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151198.217402622!2d112.61127787225617!3d-7.257574870896103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1aa4b3a4eb69%3A0x91f6c5474c6d5b91!2sSurabaya%2C%20East%20Java%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1695716764314!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <!-- Peta Surabaya -->
-    </div>    
+    </div>   
     
     <!-- Bagian Footer -->
     <footer>
@@ -65,5 +106,5 @@
         <p>Created by <span class="black-text">Kelompok</span> <span class="black-text">P13</span> @2024</p> <!-- Keterangan pembuat.. kelompok kita -->
     </footer>
 
-</body>
+  </body>
 </html>
