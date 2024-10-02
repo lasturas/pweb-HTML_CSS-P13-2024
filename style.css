@@ -277,7 +277,9 @@ body {
     width: 100%;
     aspect-ratio: 3/2;
     height: auto;
-    border-bottom: 2px solid #444;
+    border-bottom: 3px solid #444;
+    border-right: 3px solid #444;
+    border-radius: 20px;
 }
 
 .menu-item h3 {
@@ -289,6 +291,10 @@ body {
 .menu-item p {
     font-size: 16px;
     color: #ccc; 
+}
+
+.menu-item img:hover {
+    transform: scale(1.05); 
 }
 
 
